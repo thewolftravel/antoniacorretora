@@ -1,3 +1,8 @@
+body {
+  height: 100vh;
+  margin: 0;
+}
+
 #title {
   background-color: rgb(255, 255, 255, 0.6);
   border-radius: 30px;
@@ -25,12 +30,12 @@
 
 /* fadeInOut */
 #title {
-  animation: fade 3s ease-in forwards;
+  animation: fade 2s ease-in forwards;
 }
 
 @keyframes fade {
-  0%, 50%
-   {
+  0%,
+  50% {
     opacity: 0;
   }
   100% {
