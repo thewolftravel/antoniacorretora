@@ -1,0 +1,39 @@
+#title {
+  background-color: rgb(255, 255, 255, 0.6);
+  border-radius: 30px;
+  padding: 10%;
+}
+
+#background {
+  background-image: url(images/compra.jpg);
+  background-size: cover;
+  background-position: 150px 0px;
+  background-repeat: repeat-x;
+  animation: animatedBackground 15s linear infinite alternate;
+}
+
+/* Animation */
+/* moving background */
+@keyframes animatedBackground {
+  from {
+    background-position: 0 20%;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+/* fadeInOut */
+#title {
+  animation: fade 3s ease-in forwards;
+}
+
+@keyframes fade {
+  0%, 50%
+   {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
