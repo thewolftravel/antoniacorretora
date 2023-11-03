@@ -14,80 +14,97 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- BACKGROUND -->
     <div
       id="background"
       class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary"
     >
-      <div id="title">
-        <div class="col-md-6 p-lg-2 mx-auto">
-          <h1 class="display-3 fw-bold">Em Construção</h1>
+      <!-- Shadow box -->
+      <div class="container">
+        <div id="title" class="row">
+          <!-- Form container -->
+          <div class="col-6 p-lg-2 mx-auto">
+            <h1 class="display-3 fw-bold">Em Construção</h1>
 
-          <h3 class="fw-normal text-muted mb-3">Entre em contato:</h3>
-          <!-- FORMS -->
-          <form id="contactForm" action="your_server_script.php" method="post">
-            <div class="form-group my-2">
-              <input
-                type="text"
-                class="form-control"
-                name="name"
-                placeholder="Seu Nome"
-              />
-            </div>
-            <div class="form-group my-2">
-              <input
-                type="email"
-                class="form-control"
-                name="email"
-                placeholder="Seu Email"
-              />
-            </div>
-            <div class="form-group my-2">
-              <input
-                type="mensagem"
-                class="form-control"
-                name="mensagem"
-                placeholder="O que você está buscando?"
-              />
-            </div>
-            <button type="submit" class="btn btn-primary my-3">Enviar</button>
-          </form>
+            <h3 class="fw-normal text-muted mb-3">Entre em contato:</h3>
+            <!-- FORMS -->
+            <form
+              id="contactForm"
+              action="your_server_script.php"
+              method="post"
+            >
+              <div class="form-group my-2">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="name"
+                  placeholder="Seu Nome"
+                />
+              </div>
+              <div class="form-group my-2">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  placeholder="Seu Email"
+                />
+              </div>
+              <div class="form-group my-2">
+                <input
+                  type="mensagem"
+                  class="form-control"
+                  name="mensagem"
+                  placeholder="O que você está buscando?"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary my-3">Enviar</button>
+            </form>
+          </div>
+          <!-- Contact container -->
+          <div class="col-6 p-lg-2 mx-auto">
+            <img
+              src="images/antonia.png"
+              class="img-top"
+              alt="a woman in a jacket"
+              width="200"
+              height="300"
+            />
+            <h3 class="fw-normal text-muted my-2">
+              Antonia Corretora de imóveis
+            </h3>
 
-          <!-- Links -->
-          <div class="d-flex gap-3 justify-content-center lead fw-normal">
-            <a
-              class="icon-link link-success"
-              href="https://wa.me/5511943436219?text=Eu%20quero%20saber%20sobre%20imoveis"
-              target="_blank"
-            >
-              WhatsApp
-            </a>
-            <a
-              class="icon-link link-danger"
-              href="https://www.instagram.com/antonia.evenvendas/"
-              target="_blank"
-            >
-              Instagram
-            </a>
-            <a
-              class="icon-link link-secondary"
-              href="mailto:antoniaacre1@gmail.com "
-            >
-              Email
-            </a>
+            <!-- Links -->
+            <div class="d-flex gap-3 justify-content-center lead fw-normal">
+              <a
+                class="icon-link link-success"
+                href="https://wa.me/5511943436219?text=Eu%20quero%20saber%20sobre%20imoveis"
+                target="_blank"
+              >
+                WhatsApp
+              </a>
+              <a
+                class="icon-link link-danger"
+                href="https://www.instagram.com/antonia.evenvendas/"
+                target="_blank"
+              >
+                Instagram
+              </a>
+              <a
+                class="icon-link link-secondary"
+                href="mailto:antoniaacre1@gmail.com "
+              >
+                Email
+              </a>
+            </div>
           </div>
         </div>
-
-        <div class="product-device shadow-sm d-none d-md-block"></div>
-        <div
-          class="product-device product-device-2 shadow-sm d-none d-md-block"
-        ></div>
       </div>
     </div>
 
     <footer>
       <div class="container">
         Developed by
-        <a href="https://github.com/thewolftravel" target="_blank"
+        <a class="footer-link" href="https://github.com/thewolftravel" target="_blank"
           >@thewolftravel</a
         >
       </div>

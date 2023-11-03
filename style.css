@@ -9,10 +9,9 @@ footer {
   font-family: monospace;
   text-decoration: none;
   font-size: 0.8rem;
-  margin-bottom: 10px;
 }
 
-a {
+.footer-link {
   color: #d63384;
   font-family: monospace;
   text-decoration: none;
@@ -29,7 +28,7 @@ a:hover {
 #title {
   background-color: rgb(255, 255, 255, 0.6);
   border-radius: 30px;
-  padding: 10%;
+  padding: 5%;
 }
 
 #background {
@@ -64,4 +63,15 @@ a:hover {
   100% {
     opacity: 1;
   }
+}
+
+.top-section {
+  position: sticky;
+  top: 0;
+  translate: 0 calc(-1% * (max(var(--scroll), 25) - 25) * 100 / 75);
+}
+
+.img-top {
+  --value: min(var(--scroll), 30) * 50 / 30;
+  width: cal(50vw + 1vw * var(--value));
 }
